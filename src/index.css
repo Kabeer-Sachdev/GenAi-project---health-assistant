@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 266 100% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 266 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 266 100% 65%;
+
+    --radius: 0.75rem;
+
+    /* Mental health app colors */
+    --energy-green: 142 76% 73%;
+    --growth-pink: 340 82% 82%;
+    --checkin-blue: 221 83% 73%;
+    --joy-yellow: 48 96% 65%;
+    --calm-blue: 199 89% 85%;
+    --balanced-teal: 180 62% 85%;
+    --therapist-dark: 258 30% 15%;
+    --therapist-card: 258 25% 20%;
+    --emotion-joy: 142 71% 45%;
+    --emotion-neutral: 215 20% 65%;
+    --emotion-sadness: 221 83% 53%;
+    --gradient-bg: linear-gradient(135deg, hsl(266 100% 95%) 0%, hsl(266 80% 90%) 100%);
+  }
+
+  .dark {
+    --background: 258 30% 10%;
+    --foreground: 0 0% 98%;
+
+    --card: 258 25% 15%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 258 25% 15%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 266 100% 65%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 258 20% 25%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 258 20% 25%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 266 80% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 258 20% 25%;
+    --input: 258 20% 25%;
+    --ring: 266 100% 65%;
+    
+    --therapist-dark: 258 30% 12%;
+    --therapist-card: 258 25% 18%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
